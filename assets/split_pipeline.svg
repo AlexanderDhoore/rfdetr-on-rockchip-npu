@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" role="img" aria-label="RF-DETR split pipeline">
+  <rect width="1200" height="280" fill="#f7f8fb"/>
+
+  <rect x="30" y="90" width="210" height="100" rx="10" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+  <text x="135" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#1e3a8a">Input Image</text>
+  <text x="135" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#1e3a8a">(preprocessed)</text>
+
+  <rect x="290" y="55" width="300" height="160" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+  <text x="440" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#14532d">Backbone</text>
+  <text x="440" y="123" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#14532d">backbone.rknn</text>
+  <text x="440" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#14532d">Runs on Rockchip NPU</text>
+
+  <rect x="650" y="55" width="300" height="160" rx="10" fill="#ffedd5" stroke="#c2410c" stroke-width="2"/>
+  <text x="800" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#7c2d12">Detector Head</text>
+  <text x="800" y="123" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#7c2d12">detection.onnx</text>
+  <text x="800" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#7c2d12">Runs on CPU (ONNX Runtime)</text>
+
+  <rect x="1010" y="80" width="160" height="120" rx="10" fill="#e9d5ff" stroke="#7e22ce" stroke-width="2"/>
+  <text x="1090" y="113" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#581c87">Boxes</text>
+  <text x="1090" y="137" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#581c87">Scores</text>
+  <text x="1090" y="161" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#581c87">Masks (seg)</text>
+
+  <line x1="240" y1="140" x2="290" y2="140" stroke="#334155" stroke-width="3"/>
+  <polygon points="290,140 278,134 278,146" fill="#334155"/>
+
+  <line x1="590" y1="140" x2="650" y2="140" stroke="#334155" stroke-width="3"/>
+  <polygon points="650,140 638,134 638,146" fill="#334155"/>
+
+  <line x1="950" y1="140" x2="1010" y2="140" stroke="#334155" stroke-width="3"/>
+  <polygon points="1010,140 998,134 998,146" fill="#334155"/>
+
+  <text x="440" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#14532d">feature maps</text>
+  <text x="800" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#7c2d12">class logits + boxes (+ masks for seg models)</text>
+</svg>

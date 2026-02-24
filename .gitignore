@@ -1,0 +1,15 @@
+rf-detr/
+
+# Local weights/checkpoints
+rf-detr-*.pth
+rf-detr-*.pt
+
+# Generated model artifacts
+output/
+
+# Generated verification images
+bus_*.jpg
+
+# Python cache files
+__pycache__/
+*.pyc

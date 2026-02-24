@@ -1,0 +1,17 @@
+FROM python:3.11
+
+WORKDIR /workspace
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+  libgl1 \
+  libglib2.0-0 \
+  libxcb1 \
+  && rm -rf /var/lib/apt/lists/*
+
+RUN pip install --no-cache-dir \
+  onnxruntime==1.24.2 \
+  supervision==0.27.0.post1 \
+  rknn-toolkit2==2.3.2 \
+  onnx==1.18.0
+
+CMD ["bash"]
